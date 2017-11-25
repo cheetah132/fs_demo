@@ -199,8 +199,10 @@ public class ClassifyCamera extends AppCompatActivity {
             assert texture != null;
             texture.setDefaultBufferSize(imageDimension.getWidth(), imageDimension.getHeight());
             Surface surface = new Surface(texture);
-            int width = 227;
-            int height = 227;
+            int width = 128;
+            int height = 128;
+//            int width = 227;
+//            int height = 227;
             ImageReader reader = ImageReader.newInstance(width, height, ImageFormat.YUV_420_888, 4);
             ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener() {
                 @Override
